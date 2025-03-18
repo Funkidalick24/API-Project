@@ -7,6 +7,13 @@ const port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
+// Add redirect from root to api-docs
+app.get("/", (req, res) => {
+  res.redirect("/api-docs");
+});
+
+// This should come after the redirect
 app.use("/", require("./routes"));
 
 mongodb.initDB((err) => {
