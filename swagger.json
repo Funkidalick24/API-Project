@@ -169,6 +169,13 @@
         },
         "phonenumber": {
           "type": "string"
+        },
+        "favoriteColor": {
+          "type": "string"
+        },
+        "birthday": {
+          "type": "string",
+          "format": "date"
         }
       }
     },
@@ -193,6 +200,13 @@
         },
         "phonenumber": {
           "type": "string"
+        },
+        "favoriteColor": {
+          "type": "string"
+        },
+        "birthday": {
+          "type": "string",
+          "format": "date"
         }
       }
     }

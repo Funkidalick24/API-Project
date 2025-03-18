@@ -35,7 +35,8 @@ const createContact = async (req, res) => {
             lastName: req.body.lastName,
             email: req.body.email,
             phonenumber: req.body.phonenumber,
-            
+            favoriteColor: req.body.favoriteColor,
+            birthday: req.body.birthday
         };
 
         const result = await mongodb.getDB().collection('contacts').insertOne(contact);
@@ -58,6 +59,8 @@ const updateContact = async (req, res) => {
             lastName: req.body.lastName,
             email: req.body.email,
             phonenumber: req.body.phonenumber,
+            favoriteColor: req.body.favoriteColor,
+            birthday: req.body.birthday
         };
 
         const result = await mongodb.getDB()
