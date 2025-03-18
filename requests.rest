@@ -2,8 +2,8 @@
 GET http://localhost:3000/contacts
 Content-Type: application/json
 
-### Get single contact by ID (replace ID with an actual ID from your database)
-GET http://localhost:3000/contacts/65f389b0c544e74b30e85dbe
+### Get single contact
+GET http://localhost:3000/contacts/65f897413357d2adfa732f99
 Content-Type: application/json
 
 ### Create new contact
@@ -18,18 +18,18 @@ Content-Type: application/json
     "birthday": "1990-01-01"
 }
 
-### Update contact (replace ID)
-PUT http://localhost:3000/contacts/65f389b0c544e74b30e85dbe
+### Update contact
+PUT http://localhost:3000/contacts/65f897413357d2adfa732f99
 Content-Type: application/json
 
 {
     "firstName": "John",
-    "lastName": "Doe",
-    "email": "john.updated@example.com",
-    "favoriteColor": "green",
+    "lastName": "Smith",
+    "email": "john.smith@example.com",
+    "favoriteColor": "red",
     "birthday": "1990-01-01"
 }
 
-### Delete contact (replace ID)
-DELETE http://localhost:3000/contacts/65f389b0c544e74b30e85dbe
+### Delete contact
+DELETE http://localhost:3000/contacts/65f897413357d2adfa732f99
 Content-Type: application/json
