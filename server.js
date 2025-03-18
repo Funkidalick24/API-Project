@@ -7,7 +7,13 @@ const cors = require("cors");
 const port = process.env.PORT || 3000;
 
 // Enable CORS for all routes
-app.use(cors());
+const corsOptions = {
+  origin: '*', // Or specify allowed origins
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+};
+
+app.use(cors(corsOptions));
 
 // Update swagger host based on environment
 if (process.env.NODE_ENV === 'production') {

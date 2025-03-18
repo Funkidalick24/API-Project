@@ -1,4 +1,4 @@
-@baseUrl = {{$processEnv HOST}}
+@baseUrl = https://{{$processEnv HOST}}
 @port = {{$processEnv PORT}}
 
 ### Get all contacts
