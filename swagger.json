@@ -5,7 +5,7 @@
     "description": "API for managing contact information",
     "version": "1.0.0"
   },
-  "host": "${process.env.HOST || 'localhost:3000'}",
+  "host": "${process.env.HOST}:${process.env.PORT}",
   "basePath": "/",
   "schemes": [
     "http",
