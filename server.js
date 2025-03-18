@@ -9,6 +9,13 @@ const port = process.env.PORT || 3000;
 // Enable CORS for all routes
 app.use(cors());
 
+// Update swagger host based on environment
+if (process.env.NODE_ENV === 'production') {
+  swaggerDocument.host = process.env.HOST;
+} else {
+  swaggerDocument.host = `localhost:${port}`;
+}
+
 app.use(express.json());
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
