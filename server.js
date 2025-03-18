@@ -20,6 +20,10 @@ app.get("/", (req, res) => {
 // This should come after the redirect
 app.use("/", require("./routes"));
 
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
+
 mongodb.initDB((err) => {
   if (err) {
     console.log(err);

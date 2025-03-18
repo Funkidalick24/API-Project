@@ -5,10 +5,11 @@
     "description": "API for managing contact information",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "${process.env.HOST || 'localhost:3000'}",
   "basePath": "/",
   "schemes": [
-    "http"
+    "http",
+    "https"
   ],
   "paths": {
     "/contacts": {
