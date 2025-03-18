@@ -166,12 +166,8 @@
         "email": {
           "type": "string"
         },
-        "favoriteColor": {
+        "phonenumber": {
           "type": "string"
-        },
-        "birthday": {
-          "type": "string",
-          "format": "date"
         }
       }
     },
@@ -194,12 +190,8 @@
         "email": {
           "type": "string"
         },
-        "favoriteColor": {
+        "phonenumber": {
           "type": "string"
-        },
-        "birthday": {
-          "type": "string",
-          "format": "date"
         }
       }
     }
